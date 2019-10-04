@@ -1,119 +1,70 @@
-*{
-    box-sizing: border-box;
-    margin:0px;
-    padding:0px;
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 175%;
+  font-family: Arial, sans-serif;
 }
 
+h2{
+  float: right;
+  width: 30%;
+  margin-top: 0px;
+  font-size: 125%;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
 
-body{
+#chicken{
+  background-color: #CC0000;
+}
+#beef{
+  background-color: #0088FF;
+}
+#sushi{
+  background-color: #00CC00;
+}
+.row {
+  width: 100%;
+}
+
+p{
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.col-lg-4,.col-md-6, .col-md-12, .col-sm-12 {
     background-color: white;
-    margin: 0;
-    padding: 0;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+section {
+  display: block;
+  border: 1px solid black;
+  margin: 10px;
+  height: auto;
+  background-color: grey;
 }
-
-h1{
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    font-size: 32pt;
-    margin-bottom: 100px;
-    text-align: center;
-}
-
-p {
-  
-   position: relative;
-   margin-right: auto;
-   margin-left: auto;
-   font-family: Helvetica;
-   font-size: 16px;
-   color: white;
-  
-}
-.container-fluid{
-    width:100%;
-  padding-left: 20px;
-  padding-right:20px;
-}
-
-.row{
-    margin-right: 20px;
-    margin-left: 20px;
-  margin-bottom: 40px;
-    background-color: #999999;
-    border: 2px solid black;
-    /*overflow:hidden;*/
-
-
-}
-
-.section-title{
-    width: 30%;
-    height:50px;
-    float:right;
-
-    border-left: 2px solid black;
-    border-bottom:2px solid black;
-    }
-
-.menu{
-    
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    text-align: center;
-    font-size:1.5em ;
-  height: 48px;
-    color: black;
-    
-}
-.chicken{
-    background-color: #D29A96;
-}
-
-.pork{
-    background-color:#C24745;
-
-}
-
-.fish{
-    background-color: #E4D19A;
-}
-.food{
-    clear:both;
-    text-align: left;
-  padding-left: 15px;
-    height: 150px;
-}
-/******** large device over 992 px only********/
-
+/********** Desktop only **********/
 @media (min-width: 992px) {
-   .col-lg-4,  .col-lg-6, .col-lg-12 {
-    float: left;
-    border: 1px /*solid green*/;
-  }
-  
   .col-lg-4 {
-    width: 33.33%;
-  }
-  
- .col-lg-6 {
-    width: 50%;
-  } 
-  
-  .col-lg-12 {
-    width: 100%;
+    width: 33.3%;
   }
 }
 
-/******** medium  device between 768- 992 px only********/
 
+/********** Tablet devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-   .col-md-4,  .col-md-6, .col-md-12 {
-    float: left;
-    /*border: 1px solid green*/
-  }
-  
-  .col-md-4 {
-    width: 33.33%;
-  }
-  
   .col-md-6 {
     width: 50%;
   }
@@ -122,22 +73,8 @@ p {
   }
 }
 
-
-/******** small device less than 768px only********/
-
-@media ( max-width: 767px) {
-   .col-sm-4,  .col-sm-6, .col-sm-12 {
-    float: left;
-    border: 1px /*solid green*/;
-  }
-  
-  .col-sm-4 {
-    width: 33.33%;
-  }
-  
-  .col-sm-6 {
-    width: 50%;
-  }
+/********** Mobile only **********/
+@media (max-width: 767px) {
   .col-sm-12 {
     width: 100%;
   }
